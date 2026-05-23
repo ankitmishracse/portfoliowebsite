@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ══════════════════════════════════════
+       META & SEO
+  ══════════════════════════════════════ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>Jordan Lee — Full-Stack Web Developer</title>
+  <meta name="description" content="Portfolio of Jordan Lee, a full-stack web developer specialising in React, Node.js, and accessible performant web applications." />
+  <meta name="keywords" content="web developer, full stack, React, Node.js, portfolio, JavaScript, TypeScript" />
+  <meta name="author" content="Jordan Lee" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://jordanlee.dev/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://jordanlee.dev/" />
+  <meta property="og:title"       content="Jordan Lee — Full-Stack Web Developer" />
+  <meta property="og:description" content="Building fast, accessible, beautifully-crafted web applications." />
+  <meta property="og:image"       content="https://jordanlee.dev/og-image.png" />
+  <meta property="og:image:alt"   content="Jordan Lee developer portfolio preview" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:site"        content="@jordanlee_dev" />
+  <meta name="twitter:title"       content="Jordan Lee — Full-Stack Web Developer" />
+  <meta name="twitter:description" content="Building fast, accessible, beautifully-crafted web applications." />
+  <meta name="twitter:image"       content="https://jordanlee.dev/og-image.png" />
+  <meta name="twitter:image:alt"   content="Jordan Lee developer portfolio preview" />
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jordan Lee",
+    "jobTitle": "Full-Stack Web Developer",
+    "url": "https://jordanlee.dev",
+    "sameAs": [
+      "https://github.com/jordanlee",
+      "https://linkedin.com/in/jordanlee",
+      "https://twitter.com/jordanlee_dev"
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,600;0,800;1,300&family=Syne:wght@400;700;800&display=swap" rel="stylesheet" />
+
+  <!-- External Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ══════════════════════════════════════
+       SKIP LINKS  (WCAG 2.4.1)
+  ══════════════════════════════════════ -->
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+  <a href="#contact"      class="skip-nav">Skip to contact</a>
+
+  <!-- ══════════════════════════════════════
+       CURSOR FOLLOWER (decorative, aria-hidden)
+  ══════════════════════════════════════ -->
+  <div class="cursor-dot"  aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+
+  <!-- ══════════════════════════════════════
+       HEADER
+  ══════════════════════════════════════ -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+
+      <div class="site-identity">
+        <a href="/" aria-label="Jordan Lee — back to homepage">
+          <span class="logo-bracket" aria-hidden="true">&lt;</span>
+          <span class="logo-name">JL</span>
+          <span class="logo-bracket" aria-hidden="true">/&gt;</span>
+        </a>
+      </div>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation">
+        <button
+          class="nav-toggle"
+          aria-expanded="false"
+          aria-controls="nav-list"
+          aria-label="Toggle navigation menu"
+          id="nav-toggle-btn"
+        >
+          <span class="hamburger" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <ul id="nav-list" role="list">
+          <li><a href="#about"      class="nav-link"><span class="nav-num" aria-hidden="true">01.</span>About</a></li>
+          <li><a href="#stack"      class="nav-link"><span class="nav-num" aria-hidden="true">02.</span>Stack</a></li>
+          <li><a href="#projects"   class="nav-link"><span class="nav-num" aria-hidden="true">03.</span>Projects</a></li>
+          <li><a href="#experience" class="nav-link"><span class="nav-num" aria-hidden="true">04.</span>Experience</a></li>
+          <li><a href="#contact"    class="nav-link nav-cta">Hire me</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════
+       MAIN
+  ══════════════════════════════════════ -->
+  <main id="main-content" tabindex="-1">
+
+    <!-- ── HERO ── -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-inner">
+
+        <!-- Code decoration (aria-hidden) -->
+        <div class="hero-code-block" aria-hidden="true">
+          <div class="code-line"><span class="tok-key">const</span> <span class="tok-var">developer</span> <span class="tok-op">=</span> <span class="tok-brace">{</span></div>
+          <div class="code-line indent"><span class="tok-prop">name</span><span class="tok-op">:</span> <span class="tok-str">'Jordan Lee'</span><span class="tok-op">,</span></div>
+          <div class="code-line indent"><span class="tok-prop">role</span><span class="tok-op">:</span> <span class="tok-str">'Full-Stack Developer'</span><span class="tok-op">,</span></div>
+          <div class="code-line indent"><span class="tok-prop">status</span><span class="tok-op">:</span> <span class="tok-str tok-green">'open to work'</span><span class="tok-op">,</span></div>
+          <div class="code-line indent"><span class="tok-prop">passion</span><span class="tok-op">:</span> <span class="tok-str">'accessible web'</span></div>
+          <div class="code-line"><span class="tok-brace">}</span></div>
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span>Available for freelance &amp; full-time</span>
+          </p>
+
+          <h1 id="hero-heading">
+            <span class="hero-line">I build</span>
+            <span class="hero-line hero-accent">the web.</span>
+          </h1>
+
+          <p class="hero-sub">
+            Full-stack developer crafting performant, accessible applications
+            with React, Node.js, and a love for clean architecture.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View projects</a>
+            <a href="#contact"  class="btn btn-ghost">Get in touch</a>
+            <a href="/resume.pdf" class="btn btn-ghost" download aria-label="Download résumé PDF">
+              <span aria-hidden="true">↓</span> Résumé
+            </a>
+          </div>
+
+          <div class="hero-stats" aria-label="Career highlights">
+            <div class="stat">
+              <span class="stat-num" aria-label="5 years of experience">5+</span>
+              <span class="stat-label">Years exp.</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num" aria-label="42 projects shipped">42</span>
+              <span class="stat-label">Projects shipped</span>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat">
+              <span class="stat-num" aria-label="18 happy clients">18</span>
+              <span class="stat-label">Happy clients</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Scroll hint -->
+      <div class="scroll-hint" aria-hidden="true">
+        <span class="scroll-line"></span>
+        <span class="scroll-text">scroll</span>
+      </div>
+    </section>
+
+    <!-- ── ABOUT ── -->
+    <section class="about-section section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num" aria-hidden="true">01</span>
+          <h2 id="about-heading" class="section-title">About me</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Hey! I'm Jordan — a full-stack developer based in Austin, TX with a
+              deep obsession for building things that are both technically excellent
+              and genuinely delightful to use.
+            </p>
+            <p>
+              I started writing HTML at 14 and never stopped. These days I work
+              across the whole stack: React frontends, Node/Express APIs, PostgreSQL
+              databases, and everything in between. I care deeply about performance,
+              accessibility, and code that future-me won't curse at.
+            </p>
+            <p>
+              Outside work: mechanical keyboards, specialty coffee, and contributing
+              to open-source projects late at night.
+            </p>
+          </div>
+
+          <div class="about-terminal" aria-label="Fun facts about Jordan" role="region">
+            <div class="terminal-bar" aria-hidden="true">
+              <span class="t-dot t-red"></span>
+              <span class="t-dot t-yellow"></span>
+              <span class="t-dot t-green"></span>
+              <span class="t-title">jordan@dev:~</span>
+            </div>
+            <div class="terminal-body">
+              <p class="t-line"><span class="t-prompt" aria-hidden="true">$ </span><span class="t-cmd">whoami</span></p>
+              <p class="t-output">Full-Stack Developer · Austin, TX</p>
+              <p class="t-line"><span class="t-prompt" aria-hidden="true">$ </span><span class="t-cmd">cat interests.txt</span></p>
+              <p class="t-output">React · Node · Postgres · DevOps · OSS</p>
+              <p class="t-line"><span class="t-prompt" aria-hidden="true">$ </span><span class="t-cmd">echo $CURRENTLY</span></p>
+              <p class="t-output tok-green">Building cool stuff. Open to roles.</p>
+              <p class="t-line t-cursor-line"><span class="t-prompt" aria-hidden="true">$ </span><span class="t-cursor" aria-hidden="true">▋</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── TECH STACK ── -->
+    <section class="stack-section section" id="stack" aria-labelledby="stack-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num" aria-hidden="true">02</span>
+          <h2 id="stack-heading" class="section-title">Tech stack</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="stack-categories">
+
+          <article class="stack-category" aria-labelledby="stack-frontend">
+            <h3 id="stack-frontend" class="stack-cat-title">
+              <span class="cat-icon" aria-hidden="true">◈</span> Frontend
+            </h3>
+            <ul class="stack-list" aria-label="Frontend technologies" role="list">
+              <li class="stack-item" data-level="95"><span class="stack-name">React / Next.js</span><span class="stack-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" aria-label="React / Next.js: 95%"><span class="stack-fill"></span></span></li>
+              <li class="stack-item" data-level="90"><span class="stack-name">TypeScript</span><span class="stack-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" aria-label="TypeScript: 90%"><span class="stack-fill"></span></span></li>
+              <li class="stack-item" data-level="88"><span class="stack-name">CSS / Tailwind</span><span class="stack-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="CSS / Tailwind: 88%"><span class="stack-fill"></span></span></li>
+              <li class="stack-item" data-level="80"><span class="stack-name">Three.js / WebGL</span><span class="stack-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="Three.js / WebGL: 80%"><span class="stack-fill"></span></span></li>
+            </ul>
+          </article>
+
+          <article class="stack-category" aria-labelledby="stack-backend">
+            <h3 id="stack-backend" class="stack-cat-title">
+              <span class="cat-icon" aria-hidden="true">◈</span> Backend
+            </h3>
+            <ul class="stack-list" aria-label="Backend technologies" role="list">
+              <li class="stack-item" data-level="92"><span class="stack-name">Node.js / Express</span><span class="stack-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100" aria-label="Node.js / Express: 92%"><span class="stack-fill"></span></span></li>
+              <li class="stack-item" data-level="85"><span class="stack-name">PostgreSQL</span><span class="stack-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" aria-label="PostgreSQL: 85%"><span class="stack-fill"></span></span></li>
+              <li class="stack-item" data-level="78"><span class="stack-name">GraphQL</span><span class="stack-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100" aria-label="GraphQL: 78%"><span class="stack-fill"></span></span></li>
+              <li class="stack-item" data-level="75"><span class="stack-name">Redis</span><span class="stack-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" aria-label="Redis: 75%"><span class="stack-fill"></span></span></li>
+            </ul>
+          </article>
+
+          <article class="stack-category" aria-labelledby="stack-tools">
+            <h3 id="stack-tools" class="stack-cat-title">
+              <span class="cat-icon" aria-hidden="true">◈</span> Tools &amp; DevOps
+            </h3>
+            <ul class="stack-list" aria-label="Tools and DevOps" role="list">
+              <li class="stack-item" data-level="88"><span class="stack-name">Git / GitHub</span><span class="stack-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100" aria-label="Git / GitHub: 88%"><span class="stack-fill"></span></span></li>
+              <li class="stack-item" data-level="82"><span class="stack-name">Docker / Compose</span><span class="stack-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100" aria-label="Docker / Compose: 82%"><span class="stack-fill"></span></span></li>
+              <li class="stack-item" data-level="76"><span class="stack-name">AWS / Vercel</span><span class="stack-bar" role="progressbar" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100" aria-label="AWS / Vercel: 76%"><span class="stack-fill"></span></span></li>
+              <li class="stack-item" data-level="80"><span class="stack-name">CI/CD (GitHub Actions)</span><span class="stack-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" aria-label="CI/CD GitHub Actions: 80%"><span class="stack-fill"></span></span></li>
+            </ul>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ── PROJECTS ── -->
+    <section class="projects-section section" id="projects" aria-labelledby="projects-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num" aria-hidden="true">03</span>
+          <h2 id="projects-heading" class="section-title">Projects</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1 — Featured -->
+          <article class="project-card project-featured" aria-labelledby="proj-1-title">
+            <header class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-badge">Featured</span>
+                <div class="project-links">
+                  <a href="https://github.com/jordanlee/devflow" target="_blank" rel="noopener noreferrer" aria-label="DevFlow source code on GitHub (opens new tab)" class="icon-link">
+                    <span aria-hidden="true">{ }</span>
+                  </a>
+                  <a href="https://devflow.app" target="_blank" rel="noopener noreferrer" aria-label="DevFlow live demo (opens new tab)" class="icon-link">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+              <h3 id="proj-1-title" class="project-title">DevFlow</h3>
+              <p class="project-desc">
+                A full-stack developer productivity dashboard. Real-time GitHub
+                stats, PR timelines, CI/CD pipeline monitoring, and Jira sync
+                — all in one place. Built with Next.js, Prisma, and WebSockets.
+              </p>
+            </header>
+            <footer class="project-card-footer">
+              <ul class="project-tags" aria-label="Technologies used" role="list">
+                <li class="tag">Next.js</li>
+                <li class="tag">TypeScript</li>
+                <li class="tag">Prisma</li>
+                <li class="tag">WebSockets</li>
+                <li class="tag">PostgreSQL</li>
+              </ul>
+            </footer>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project-card" aria-labelledby="proj-2-title">
+            <header class="project-card-header">
+              <div class="project-meta-top">
+                <span class="project-badge project-badge-oss">Open Source</span>
+                <div class="project-links">
+                  <a href="https://github.com/jordanlee/qform" target="_blank" rel="noopener noreferrer" aria-label="qForm source code on GitHub (opens new tab)" class="icon-link">
+                    <span aria-hidden="true">{ }</span>
+                  </a>
+                  <a href="https://qform.dev" target="_blank" rel="noopener noreferrer" aria-label="qForm live site (opens new tab)" class="icon-link">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+              <h3 id="proj-2-title" class="project-title">qForm</h3>
+              <p class="project-desc">
+                Headless, accessible form library for React. Zero runtime
+                dependencies, full TypeScript support, and WCAG 2.1 AA out
+                of the box. 2.3k GitHub stars.
+              </p>
+            </header>
+            <footer class="project-card-footer">
+              <ul class="project-tags" aria-label="Technologies used" role="list">
+                <li class="tag">React</li>
+                <li class="tag">TypeScript</li>
+                <li class="tag">Rollup</li>
+                <li class="tag">WCAG</li>
+              </ul>
+            </footer>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project-card" aria-labelledby="proj-3-title">
+            <header class="project-card-header">
+              <div class="project-meta-top">
+                <div class="project-links">
+                  <a href="https://github.com/jordanlee/stackcast" target="_blank" rel="noopener noreferrer" aria-label="StackCast source code on GitHub (opens new tab)" class="icon-link">
+                    <span aria-hidden="true">{ }</span>
+                  </a>
+                  <a href="https://stackcast.io" target="_blank" rel="noopener noreferrer" aria-label="StackCast live site (opens new tab)" class="icon-link">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+              <h3 id="proj-3-title" class="project-title">StackCast</h3>
+              <p class="project-desc">
+                Developer podcast discovery engine. Aggregates RSS feeds,
+                generates AI-powered episode summaries, and surfaces
+                relevant content by tech stack.
+              </p>
+            </header>
+            <footer class="project-card-footer">
+              <ul class="project-tags" aria-label="Technologies used" role="list">
+                <li class="tag">Node.js</li>
+                <li class="tag">OpenAI API</li>
+                <li class="tag">Redis</li>
+                <li class="tag">React</li>
+              </ul>
+            </footer>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project-card" aria-labelledby="proj-4-title">
+            <header class="project-card-header">
+              <div class="project-meta-top">
+                <div class="project-links">
+                  <a href="https://github.com/jordanlee/envvault" target="_blank" rel="noopener noreferrer" aria-label="EnvVault source code on GitHub (opens new tab)" class="icon-link">
+                    <span aria-hidden="true">{ }</span>
+                  </a>
+                  <a href="https://envvault.dev" target="_blank" rel="noopener noreferrer" aria-label="EnvVault live site (opens new tab)" class="icon-link">
+                    <span aria-hidden="true">↗</span>
+                  </a>
+                </div>
+              </div>
+              <h3 id="proj-4-title" class="project-title">EnvVault</h3>
+              <p class="project-desc">
+                Team secret &amp; environment variable manager. End-to-end
+                encrypted, Git-integrated, with role-based access control
+                and full audit logging.
+              </p>
+            </header>
+            <footer class="project-card-footer">
+              <ul class="project-tags" aria-label="Technologies used" role="list">
+                <li class="tag">Express</li>
+                <li class="tag">AES-256</li>
+                <li class="tag">Docker</li>
+                <li class="tag">PostgreSQL</li>
+              </ul>
+            </footer>
+          </article>
+
+        </div>
+
+        <div class="projects-footer">
+          <a href="https://github.com/jordanlee" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" aria-label="View all projects on GitHub (opens new tab)">
+            View all on GitHub ↗
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── EXPERIENCE ── -->
+    <section class="experience-section section" id="experience" aria-labelledby="exp-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num" aria-hidden="true">04</span>
+          <h2 id="exp-heading" class="section-title">Experience</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <ol class="timeline" aria-label="Work history" role="list">
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"><span class="t-dot-outer"><span class="t-dot-inner"></span></span></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="timeline-role">Senior Frontend Engineer</h3>
+                  <p class="timeline-org">
+                    <a href="https://vercel.com" target="_blank" rel="noopener noreferrer" aria-label="Vercel (opens new tab)">Vercel</a>
+                    · Remote
+                  </p>
+                </div>
+                <time class="timeline-period" datetime="2023-01">Jan 2023 – Present</time>
+              </div>
+              <ul class="timeline-bullets" role="list">
+                <li>Built and maintained core dashboard UI serving 400k+ developers</li>
+                <li>Led accessibility audit initiative — brought product to WCAG 2.1 AA</li>
+                <li>Reduced First Contentful Paint by 38% through bundle optimisation</li>
+              </ul>
+              <ul class="timeline-tags" aria-label="Technologies" role="list">
+                <li class="tag">React</li><li class="tag">TypeScript</li><li class="tag">Next.js</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"><span class="t-dot-outer"><span class="t-dot-inner"></span></span></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="timeline-role">Full-Stack Developer</h3>
+                  <p class="timeline-org">Stripe · San Francisco, CA</p>
+                </div>
+                <time class="timeline-period" datetime="2021-03">Mar 2021 – Dec 2022</time>
+              </div>
+              <ul class="timeline-bullets" role="list">
+                <li>Developed internal tooling used by 300+ engineers for payment debugging</li>
+                <li>Owned GraphQL API layer for the Billing product vertical</li>
+                <li>Mentored 3 junior developers through structured pairing sessions</li>
+              </ul>
+              <ul class="timeline-tags" aria-label="Technologies" role="list">
+                <li class="tag">Node.js</li><li class="tag">GraphQL</li><li class="tag">Ruby</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"><span class="t-dot-outer"><span class="t-dot-inner"></span></span></div>
+            <div class="timeline-content">
+              <div class="timeline-top">
+                <div>
+                  <h3 class="timeline-role">Frontend Developer</h3>
+                  <p class="timeline-org">Freelance · Remote</p>
+                </div>
+                <time class="timeline-period" datetime="2019-06">Jun 2019 – Feb 2021</time>
+              </div>
+              <ul class="timeline-bullets" role="list">
+                <li>Delivered 20+ client projects across e-commerce, SaaS, and marketing</li>
+                <li>Specialised in React SPAs and Jamstack architecture</li>
+              </ul>
+              <ul class="timeline-tags" aria-label="Technologies" role="list">
+                <li class="tag">React</li><li class="tag">Gatsby</li><li class="tag">Shopify</li>
+              </ul>
+            </div>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section class="contact-section section" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-num" aria-hidden="true">05</span>
+          <h2 id="contact-heading" class="section-title">Get in touch</h2>
+          <span class="section-line" aria-hidden="true"></span>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Left: intro -->
+          <aside class="contact-aside" aria-label="Contact information">
+            <p class="contact-tagline">
+              Got a project, a question, or just want to say hi?
+              My inbox is open.
+            </p>
+
+            <nav aria-label="Social and contact links" class="contact-links">
+              <ul role="list">
+                <li>
+                  <a href="mailto:hello@jordanlee.dev" class="contact-link" aria-label="Email hello@jordanlee.dev">
+                    <span class="cl-icon" aria-hidden="true">✉</span>
+                    hello@jordanlee.dev
+                  </a>
+                </li>
+                <li>
+                  <a href="https://github.com/jordanlee" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="GitHub profile (opens new tab)">
+                    <span class="cl-icon" aria-hidden="true">{ }</span>
+                    github.com/jordanlee
+                  </a>
+                </li>
+                <li>
+                  <a href="https://linkedin.com/in/jordanlee" target="_blank" rel="noopener noreferrer" class="contact-link" aria-label="LinkedIn profile (opens new tab)">
+                    <span class="cl-icon" aria-hidden="true">in</span>
+                    linkedin.com/in/jordanlee
+                  </a>
+                </li>
+                <li>
+                  <a href="/resume.pdf" class="contact-link" download aria-label="Download résumé PDF">
+                    <span class="cl-icon" aria-hidden="true">↓</span>
+                    Download résumé
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </aside>
+
+          <!-- Right: form -->
+          <div class="contact-form-wrap">
+
+            <!-- Success message -->
+            <div class="form-success" id="form-success" role="alert" aria-live="polite" aria-atomic="true" tabindex="-1">
+              <span class="success-icon" aria-hidden="true">✓</span>
+              <h3>Message sent!</h3>
+              <p>Thanks for reaching out. I'll get back to you within 24 hours.</p>
+            </div>
+
+            <form id="contact-form" action="/api/contact" method="POST" novalidate aria-labelledby="form-heading" aria-describedby="form-req-note">
+              <h3 id="form-heading" class="form-heading">Send a message</h3>
+              <p id="form-req-note" class="sr-only">Fields marked with an asterisk (*) are required.</p>
+
+              <div class="form-row">
+                <div class="form-field">
+                  <label class="form-label" for="f-name">
+                    Name <span class="req-mark" aria-label="required">*</span>
+                  </label>
+                  <input
+                    type="text" id="f-name" name="name"
+                    class="form-input" autocomplete="name"
+                    required aria-required="true"
+                    aria-describedby="f-name-err"
+                    placeholder="Your name"
+                  />
+                  <span id="f-name-err" class="field-error" role="alert" aria-live="polite"></span>
+                </div>
+
+                <div class="form-field">
+                  <label class="form-label" for="f-email">
+                    Email <span class="req-mark" aria-label="required">*</span>
+                  </label>
+                  <input
+                    type="email" id="f-email" name="email"
+                    class="form-input" autocomplete="email"
+                    required aria-required="true"
+                    aria-describedby="f-email-hint f-email-err"
+                    placeholder="you@example.com"
+                  />
+                  <span id="f-email-hint" class="form-hint">Only used to reply to you.</span>
+                  <span id="f-email-err" class="field-error" role="alert" aria-live="polite"></span>
+                </div>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="f-type">Project type</label>
+                <select id="f-type" name="project_type" class="form-select" aria-describedby="f-type-hint">
+                  <option value="" disabled selected>Select a type…</option>
+                  <option value="fullstack">Full-Stack Development</option>
+                  <option value="frontend">Frontend Only</option>
+                  <option value="api">API / Backend</option>
+                  <option value="consulting">Code Review / Consulting</option>
+                  <option value="other">Other</option>
+                </select>
+                <span id="f-type-hint" class="form-hint">Helps me respond with the right info.</span>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="f-budget">Budget range</label>
+                <select id="f-budget" name="budget" class="form-select">
+                  <option value="" disabled selected>Select a range…</option>
+                  <option value="small">Under $5k</option>
+                  <option value="mid">$5k – $20k</option>
+                  <option value="large">$20k – $50k</option>
+                  <option value="enterprise">$50k+</option>
+                </select>
+              </div>
+
+              <div class="form-field">
+                <label class="form-label" for="f-message">
+                  Message <span class="req-mark" aria-label="required">*</span>
+                </label>
+                <textarea
+                  id="f-message" name="message"
+                  class="form-textarea" rows="5"
+                  required aria-required="true"
+                  aria-describedby="f-message-hint f-message-err"
+                  placeholder="Tell me about your project, stack, timeline…"
+                ></textarea>
+                <span id="f-message-hint" class="form-hint">Minimum 20 characters.</span>
+                <span id="f-message-err" class="field-error" role="alert" aria-live="polite"></span>
+              </div>
+
+              <div class="checkbox-field">
+                <input
+                  type="checkbox" id="f-consent" name="consent"
+                  class="form-checkbox"
+                  required aria-required="true"
+                  aria-describedby="f-consent-err"
+                />
+                <label class="checkbox-label" for="f-consent">
+                  I agree to Jordan Lee storing my data to reply to my enquiry.
+                  <span class="req-mark" aria-label="required">*</span>
+                </label>
+              </div>
+              <span id="f-consent-err" class="field-error" role="alert" aria-live="polite"></span>
+
+              <button type="submit" class="btn btn-primary form-submit" id="form-submit-btn" aria-describedby="submit-status">
+                Send message
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+
+              <div id="submit-status" role="status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════ -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="footer-copy">
+        <span aria-hidden="true">©</span><span class="sr-only">Copyright</span>
+        <time datetime="2024">2024</time> Jordan Lee.
+        <span class="footer-built" aria-hidden="true">// Built with ☕ &amp; VS Code</span>
+      </p>
+      <nav aria-label="Footer navigation" class="footer-nav">
+        <ul role="list">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="https://github.com/jordanlee" target="_blank" rel="noopener noreferrer" aria-label="GitHub (opens new tab)">GitHub</a></li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
+
+  <!-- External JS -->
+  <script src="main.js" defer></script>
+
+</body>
+</html>
